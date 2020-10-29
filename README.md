@@ -1,5 +1,7 @@
 # ML Agents Arena
 
+![Arena_terrain](https://user-images.githubusercontent.com/57441991/97641257-c62e0300-1a42-11eb-9f46-b61eb34c41ac.png)
+
 ### Abstract
 For our final project we implemented an artificial intelligence with the help of the ML Agents package of Unity. The agent learned on a basic level how to avoid the incoming enemies spawned into the arena environment as well as picking up ammo packages to shoot the enemies.
 Link to a YouTube Video: [https://youtu.be/sN2epvBnmQk]
