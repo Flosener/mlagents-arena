@@ -1,0 +1,35 @@
+{
+    "Avoidance": {
+        "checkpoints": [
+            {
+                "steps": 921,
+                "file_path": "results/AvoidanceAI04/Avoidance/Avoidance-921.nn",
+                "reward": -0.3316668023665746,
+                "creation_time": 1601472459.578203
+            },
+            {
+                "steps": 3043,
+                "file_path": "results/AvoidanceAI04/Avoidance/Avoidance-3043.nn",
+                "reward": -0.3414287141391209,
+                "creation_time": 1601472536.719789
+            },
+            {
+                "steps": 4330,
+                "file_path": "results/AvoidanceAI04/Avoidance/Avoidance-4330.nn",
+                "reward": -0.4162501394748688,
+                "creation_time": 1601472579.1045618
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 4330,
+            "file_path": "results/AvoidanceAI04/Avoidance.nn",
+            "reward": -0.4162501394748688,
+            "creation_time": 1601472579.1045618
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.19.0",
+        "tensorflow_version": "2.0.0"
+    }
+}

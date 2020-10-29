@@ -1,0 +1,2 @@
+model_checkpoint_path: "Avoidance-1958.ckpt"
+all_model_checkpoint_paths: "Avoidance-1958.ckpt"

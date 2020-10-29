@@ -1,0 +1,49 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1601472345",
+        "python_version": "3.7.6 (default, Dec 30 2019, 19:38:26) \n[Clang 11.0.0 (clang-1100.0.33.16)]",
+        "command_line_arguments": "/Users/florian/python-envs/unityml-env/bin/mlagents-learn trainer_config.yaml --run-id=AvoidanceAI01 --resume",
+        "mlagents_version": "0.19.0",
+        "mlagents_envs_version": "0.19.0",
+        "communication_protocol_version": "1.0.0",
+        "tensorflow_version": "2.0.0",
+        "numpy_version": "1.18.2",
+        "end_time_seconds": "1601472356"
+    },
+    "total": 11.010399628000002,
+    "count": 1,
+    "self": 0.013117784000003851,
+    "children": {
+        "run_training.setup": {
+            "total": 0.018333553999999808,
+            "count": 1,
+            "self": 0.018333553999999808
+        },
+        "TrainerController.start_learning": {
+            "total": 10.978948289999998,
+            "count": 1,
+            "self": 0.00020987999999810825,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 10.595077955999999,
+                    "count": 1,
+                    "self": 10.595077955999999
+                },
+                "TrainerController._save_models": {
+                    "total": 0.38366045400000104,
+                    "count": 1,
+                    "self": 3.2197999999539206e-05,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.3836282560000015,
+                            "count": 1,
+                            "self": 0.3836282560000015
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
