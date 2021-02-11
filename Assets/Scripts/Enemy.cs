@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
-        _agent = GameObject.FindGameObjectWithTag("Player");
+        _agent = transform.parent.parent.Find("OGAgent").gameObject;
     }
 
     void FixedUpdate()
@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         // The enemies should not collide with the ammo packs.
-        if (other.gameObject.CompareTag("Ammo"))
+        if (other.gameObject.CompareTag("Ammo") || other.gameObject.CompareTag("SpawnWall"))
         {
             Physics.IgnoreCollision(other.collider, GetComponent<Collider>());
         }

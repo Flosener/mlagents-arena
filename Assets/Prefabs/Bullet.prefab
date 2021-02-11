@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2835717617974931021}
-  - component: {fileID: 3321446545443929758}
+  - component: {fileID: 8661376854698888931}
   - component: {fileID: 9078652952632887094}
-  - component: {fileID: 1728060944844969193}
+  - component: {fileID: 8760013455440566324}
   - component: {fileID: 2402021980428441851}
   - component: {fileID: 2057357880391107847}
   m_Layer: 0
@@ -28,21 +28,21 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256830758088028228}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -3.73, y: 3, z: -4.13}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!33 &3321446545443929758
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8661376854698888931
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256830758088028228}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &9078652952632887094
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &1728060944844969193
-CapsuleCollider:
+--- !u!135 &8760013455440566324
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,9 +94,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
+  serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &2402021980428441851
 Rigidbody:
@@ -126,5 +125,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4114b1993e6bd4cc2be1509492410498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 3346165878921822503, guid: c30b7966aa54c4981b9601c2846c095a, type: 3}
-  _agent: {fileID: 3346165878921822503, guid: c30b7966aa54c4981b9601c2846c095a, type: 3}

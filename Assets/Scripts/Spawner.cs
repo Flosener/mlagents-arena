@@ -37,17 +37,17 @@ public class Spawner : MonoBehaviour
             _portalNr = Random.Range(0,4);
             Transform spawnWall = _portalPositions[_portalNr];
             
-            Vector3 position = new Vector3(spawnWall.position.x, 1.5f, spawnWall.position.z);
+            Vector3 position = new Vector3(spawnWall.position.x, 1f, spawnWall.position.z);
             GameObject enemy = Instantiate(_enemyPrefab, position, Quaternion.identity);
             enemy.transform.SetParent(transform);
             
             // If there are less than three ammo packs, spawn one.
-            if (collectablePresent < 3)
+            /*if (collectablePresent < 3)
             {
                 GameObject collectable = Instantiate(_collectablePrefab, new Vector3(Random.Range(-6f,6f), 1f, Random.Range(-6f,6f)), Quaternion.identity);
                 collectable.transform.SetParent(transform);
                 collectablePresent++;
-            }
+            }*/
             
             yield return new WaitForSeconds(spawnIntervalInSeconds);
         }

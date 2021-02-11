@@ -15,6 +15,7 @@ public class OGAgent : Agent
     [SerializeField] private GameObject _bulletPrefab;
     [SerializeField] private Transform _spawner;
     private Rigidbody _rb;
+    private GameObject _shootingPoint;
     private int _shotsLeft;
     private bool _shotReady;
     private float _timeSinceShot;
@@ -35,6 +36,8 @@ public class OGAgent : Agent
     public override void Initialize()
     {
         _rb = GetComponent<Rigidbody>();
+        _shootingPoint = transform.Find("ShootingPoint").gameObject;
+        
     }
 
     // Method that is called for every decision provided by the NN (i.e. on every action).
@@ -47,7 +50,7 @@ public class OGAgent : Agent
         // Agent shooting.
         if (vectorAction[3] > 0f && _shotReady && _shotsLeft > 0)
         {
-            GameObject bullet = Instantiate(_bulletPrefab, transform.position, Quaternion.Euler(90f,transform.rotation.y, 0f));
+            GameObject bullet = Instantiate(_bulletPrefab, _shootingPoint.transform.position, Quaternion.identity);
             bullet.GetComponent<Rigidbody>().velocity = transform.forward * _bulletSpeed;
             _timeSinceShot = Time.time;
             _shotsLeft--;

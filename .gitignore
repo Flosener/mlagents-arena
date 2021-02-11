@@ -70,10 +70,13 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
-# added later on
-*.DS_Store
+# added later on: project-specific files
 *.xml
 *.iml
 *.sln
 *.csproj
 unityProject.vrmanifest
+Showcase/
+._medieval-arena.zip
+medieval-arena.zip
+.collabignore
